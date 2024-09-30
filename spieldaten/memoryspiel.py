@@ -169,9 +169,9 @@ class Memoryspiel(QWidget):
             if self.gemerkte_karten[0][karten_id] != karten_pos:
                 self.gemerkte_karten[1][karten_id] = karten_pos
                 
-        self.umgedrehte_karten += 1
-        
-        if self.umgedrehte_karten == 2:
+        self.umgedrehte_karten += 1      
+
+        if self.umgedrehte_karten == 2:   
             self.paar_pruefen(karten_id)
             self.timer_umdrehen.start(2000)
             
